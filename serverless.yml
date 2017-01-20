@@ -1,0 +1,20 @@
+service: serverless-authauth-sms
+
+provider:
+  name: aws
+  runtime: python2.7
+  region: us-west-2
+
+package:
+  exclude:
+    - README.md
+
+functions:
+  vpnAuth:
+    description: "Twilio endpoint to receive two factor SMS, parse, and return response"
+    handler: handler.auth
+    events:
+     - http:
+         path: auth
+         method: post
+         integration: lambda-proxy
