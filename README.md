@@ -2,6 +2,7 @@ A [serverless](https://serverless.com/) powered API endpoint that automates two 
 
 ## Requirements
 * Serverless framework
+
   ```sh
   npm install serverless -g
   ```
@@ -10,6 +11,7 @@ A [serverless](https://serverless.com/) powered API endpoint that automates two 
 
 ## Setup
 1. Deploy serverless stack
+
   ```sh
   export AWS_ACCESS_KEY_ID=<your-key-here>
   export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
